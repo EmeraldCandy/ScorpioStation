@@ -36,9 +36,9 @@
 	mech.longactivationsound = longactivationsound
 	..()
 
-/obj/item/mecha_modkit/voice/arksoft
-	name = "mecha voice modification kit : Ark Soft"
-	desc = "This modification kit updates a mech's onboard voice to Ark Soft."
+/obj/item/mecha_modkit/voice/nanotrasen
+	name = "mecha voice modification kit : Nanotrasen"
+	desc = "This modification kit updates a mech's onboard voice to Nanotrasen."
 	nominalsound = 'sound/mecha/nominalnano.ogg'
 	zoomsound = 'sound/mecha/imag_enhnano.ogg'
 	critdestrsound = 'sound/mecha/critdestrnano.ogg'

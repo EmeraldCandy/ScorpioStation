@@ -7,12 +7,6 @@
 	pressure_resistance = 2
 	resistance_flags = FLAMMABLE
 
-/obj/item/folder/emp_act(severity)
-	..()
-	for(var/i in contents)
-		var/atom/A = i
-		A.emp_act(severity)
-
 /obj/item/folder/blue
 	desc = "A blue folder."
 	icon_state = "folder_blue"
@@ -102,11 +96,11 @@
 
 /obj/item/folder/documents
 	name = "folder- 'TOP SECRET'"
-	desc = "A folder stamped \"Top Secret - Property of Ark Soft Corporation. Unauthorized distribution is punishable by death.\""
+	desc = "A folder stamped \"Top Secret - Property of Nanotrasen Corporation. Unauthorized distribution is punishable by death.\""
 
 /obj/item/folder/documents/New()
 	..()
-	new /obj/item/documents/arksoft(src)
+	new /obj/item/documents/nanotrasen(src)
 	update_icon()
 
 /obj/item/folder/syndicate

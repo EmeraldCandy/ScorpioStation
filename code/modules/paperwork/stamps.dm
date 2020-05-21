@@ -73,7 +73,7 @@
 	item_color = "clown"
 
 /obj/item/stamp/rep
-	name = "Ark Soft Representative's rubber stamp"
+	name = "Nanotrasen Representative's rubber stamp"
 	icon_state = "stamp-rep"
 	item_color = "rep"
 

@@ -34,7 +34,7 @@ the bridge
 blinking lights
 a blue light
 an abandoned laboratory
-Ark Soft
+Nanotrasen
 The Syndicate
 blood
 healing
@@ -82,7 +82,7 @@ the pod pilot
 the barber
 the mechanic
 the magistrate
-the Ark Soft Representative
+the nanotrasen representative
 the blueshield
 a mouse
 an ert member

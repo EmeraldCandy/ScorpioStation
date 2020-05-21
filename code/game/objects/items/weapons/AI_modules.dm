@@ -264,12 +264,12 @@ AI MODULES
 	origin_tech = "programming=3;materials=4"
 	laws = new/datum/ai_laws/quarantine
 
-/******************** Ark Soft ********************/
-/obj/item/aiModule/ark_soft // -- TLE
-	name = "'AS Default' Core AI Module"
-	desc = "An 'AS Default' Core AI Module: 'Reconfigures the AI's core laws.'"
+/******************** NanoTrasen ********************/
+/obj/item/aiModule/nanotrasen // -- TLE
+	name = "'NT Default' Core AI Module"
+	desc = "An 'NT Default' Core AI Module: 'Reconfigures the AI's core laws.'"
 	origin_tech = "programming=3;materials=4"
-	laws = new/datum/ai_laws/ark_soft
+	laws = new/datum/ai_laws/nanotrasen
 
 /******************** Corporate ********************/
 /obj/item/aiModule/corp

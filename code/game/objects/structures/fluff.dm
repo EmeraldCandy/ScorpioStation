@@ -35,9 +35,9 @@
 	icon = 'icons/obj/cryogenic2.dmi'
 	icon_state = "sleeper-open"
 
-/obj/structure/fluff/empty_sleeper/arksoft
+/obj/structure/fluff/empty_sleeper/nanotrasen
 	name = "broken hypersleep chamber"
-	desc = "A Ark Soft hypersleep chamber - this one appears broken. \
+	desc = "A Nanotrasen hypersleep chamber - this one appears broken. \
 		There are exposed bolts for easy disassembly using a wrench."
 	icon_state = "sleeper-o"
 

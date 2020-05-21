@@ -118,7 +118,7 @@
 						if("2")
 							karma_purchase(karma,5,"job","Brig Physician")
 						if("3")
-							karma_purchase(karma,30,"job","Ark Soft Representative")
+							karma_purchase(karma,30,"job","Nanotrasen Representative")
 						if("5")
 							karma_purchase(karma,30,"job","Blueshield")
 						if("6")

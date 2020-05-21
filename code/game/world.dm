@@ -8,10 +8,6 @@ GLOBAL_LIST_INIT(map_transition_config, MAP_TRANSITION_CONFIG)
 	log_world("World loaded at [time_stamp()]")
 	log_world("[GLOB.vars.len - GLOB.gvars_datum_in_built_vars.len] global variables")
 
-	//temporary file used to record errors with loading config, moved to log directory once logging is set up
-	GLOB.config_error_log = GLOB.world_game_log = GLOB.world_runtime_log = "data/logs/config_error.log"
-	load_configuration()
-
 	if(byond_version < RECOMMENDED_VERSION)
 		log_world("Your server's byond version does not meet the recommended requirements for this code. Please update BYOND")
 
@@ -367,28 +363,39 @@ GLOBAL_VAR_INIT(world_topic_spam_protect_time, world.timeofday)
 	var/s = ""
 
 	if(config && config.server_name)
-		s += "<b>[config.server_name]</b>] &#8212; "
-	else
-		s += "<b>Space Station 13</b>] &#8212; "
-
-	if(config && config.wikiurl)
-		s += "\[<a href=\"[config.wikiurl]\">Wiki</a>] "
-	else
-		s += "\[Wiki] "
+		s += "<b>[config.server_name]</b> &#8212; "
+	s += "<b>[station_name()]</b> "
+	if(config && config.githuburl)
+		s+= "([GLOB.game_version])"
 
 	if(config && config.server_tag_line)
-		s += "<br>[config.server_tag_line] "
+		s += "<br>[config.server_tag_line]"
+
+	if(SSticker && ROUND_TIME > 0)
+		s += "<br>[round(ROUND_TIME / 36000)]:[add_zero(num2text(ROUND_TIME / 600 % 60), 2)], " + capitalize(get_security_level())
+	else
+		s += "<br><b>STARTING</b>"
 
 	s += "<br>"
+	var/list/features = list()
 
-	s += "<br>Map: <b>[station_name()]</b> "
+	if(!GLOB.enter_allowed)
+		features += "closed"
 
-	if(SSticker && (ROUND_TIME > 0))
-		s += "<br>Round Time: <b>[round(ROUND_TIME / 36000)]:[add_zero(num2text(ROUND_TIME / 600 % 60), 2)]</b>"
-	else
-		s += "<br>Round Time: <b>STARTING</b>"
+	if(config && config.server_extra_features)
+		features += config.server_extra_features
 
-	s += "<br>Alert: \[<b>[capitalize(get_security_level())]</b>"
+	if(config && config.allow_vote_mode)
+		features += "vote"
+
+	if(config && config.wikiurl)
+		features += "<a href=\"[config.wikiurl]\">Wiki</a>"
+
+	if(GLOB.abandon_allowed)
+		features += "respawn"
+
+	if(features)
+		s += "[jointext(features, ", ")]"
 
 	return s
 

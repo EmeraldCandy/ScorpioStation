@@ -124,7 +124,7 @@
 	item_color = "internalaffairs"
 	flags_size = ONESIZEFITSALL
 
-/obj/item/clothing/under/rank/arkrep
+/obj/item/clothing/under/rank/ntrep
 	desc = "A well-ironed dress shirt and matching set of black pants."
 	name = "dress shirt"
 	icon_state = "internalaffairs"
@@ -132,12 +132,12 @@
 	item_color = "internalaffairs"
 	flags_size = ONESIZEFITSALL
 
-/obj/item/clothing/under/rank/arkrep/skirt
+/obj/item/clothing/under/rank/ntrep/skirt
 	desc = "A silky smooth black and gold representative uniform with blue markings."
 	name = "representative skirt"
-	icon_state = "arkrepf"
-	item_state = "arkrepf"
-	item_color = "arkrepf"
+	icon_state = "ntrepf"
+	item_state = "ntrepf"
+	item_color = "ntrepf"
 	flags_size = ONESIZEFITSALL
 
 /obj/item/clothing/under/rank/janitor

@@ -14,12 +14,8 @@
 	var/list/list_enginebeacons = list()
 	var/isactive = FALSE
 
-/obj/item/enginepicker/Destroy()
-	list_enginebeacons.Cut()
-	return ..()
-
 /obj/item/enginepicker/attack_self(mob/living/carbon/user)
-	if(user.incapacitated())
+	if(usr.stat || !usr.canmove || usr.restrained())
 		return
 
 	if(!isactive)

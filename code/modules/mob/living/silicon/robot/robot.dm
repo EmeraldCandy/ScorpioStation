@@ -1322,7 +1322,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 	ear_protection = 1 // Immunity to the audio part of flashbangs
 	allow_rename = FALSE
 	modtype = "Commando"
-	faction = list("Ark Soft")
+	faction = list("nanotrasen")
 	is_emaggable = FALSE
 
 /mob/living/silicon/robot/deathsquad/New(loc)

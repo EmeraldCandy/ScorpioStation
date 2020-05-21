@@ -357,8 +357,8 @@ GLOBAL_LIST_INIT(ai_verbs_default, list(
 		"Sparkles",
 		"ANIMA",
 		"President",
-		"AS",
-		"AS2",
+		"NT",
+		"NT2",
 		"Rainbow",
 		"Angel",
 		"Heartline",
@@ -423,9 +423,9 @@ GLOBAL_LIST_INIT(ai_verbs_default, list(
 			icon_state = "ai-anima"
 		if("President")
 			icon_state = "ai-president"
-		if("AS")
+		if("NT")
 			icon_state = "ai-nt"
-		if("AS2")
+		if("NT2")
 			icon_state = "ai-nanotrasen"
 		if("Rainbow")
 			icon_state = "ai-rainbow"
@@ -571,13 +571,13 @@ GLOBAL_LIST_INIT(ai_verbs_default, list(
 	return FALSE
 
 /mob/living/silicon/ai/emp_act(severity)
-	..()
 	if(prob(30))
 		switch(pick(1,2))
 			if(1)
 				view_core()
 			if(2)
 				ai_call_shuttle()
+	..()
 
 /mob/living/silicon/ai/ex_act(severity)
 	..()

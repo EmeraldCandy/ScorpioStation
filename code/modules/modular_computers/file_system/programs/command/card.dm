@@ -26,7 +26,7 @@
 		/datum/job/cmo,
 		/datum/job/judge,
 		/datum/job/blueshield,
-		/datum/job/arksoftrep,
+		/datum/job/nanotrasenrep,
 		/datum/job/pilot,
 		/datum/job/brigdoc,
 		/datum/job/mechanic,

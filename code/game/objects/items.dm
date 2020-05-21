@@ -1,5 +1,4 @@
 GLOBAL_DATUM_INIT(fire_overlay, /image, image("icon" = 'icons/goonstation/effects/fire.dmi', "icon_state" = "fire"))
-
 /obj/item
 	name = "item"
 	icon = 'icons/obj/items.dmi'
@@ -678,3 +677,4 @@ GLOBAL_DATUM_INIT(fire_overlay, /image, image("icon" = 'icons/goonstation/effect
 		owner.update_inv_back()
 	if(flags & SLOT_PDA)
 		owner.update_inv_wear_pda()
+

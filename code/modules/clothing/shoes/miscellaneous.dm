@@ -105,7 +105,7 @@
 
 /obj/item/clothing/shoes/jackboots
 	name = "jackboots"
-	desc = "Ark Soft-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
+	desc = "Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
 	can_cut_open = 1
 	icon_state = "jackboots"
 	item_state = "jackboots"
@@ -118,7 +118,7 @@
 
 /obj/item/clothing/shoes/jackboots/jacksandals
 	name = "jacksandals"
-	desc = "Ark Soft-issue Security combat sandals for combat scenarios. They're jacksandals, however that works."
+	desc = "Nanotrasen-issue Security combat sandals for combat scenarios. They're jacksandals, however that works."
 	can_cut_open = 0
 	icon_state = "jacksandal"
 	item_color = "jacksandal"
