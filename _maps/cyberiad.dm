@@ -37,3 +37,5 @@ DECLARE_LEVEL(EMPTY_AREA, CROSSLINKED, list(REACHABLE)))
 	#warn a map has already been included, ignoring Cyberiad.
 
 #endif
+
+//A map by EmeraldCandy

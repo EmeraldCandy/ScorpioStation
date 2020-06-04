@@ -641,32 +641,49 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	icon_state = "fpmaint"
 
 /area/maintenance/fpmaint
-	name = "EVA Maintenance"
+	name = "Medical Maintenance"
 	icon_state = "fpmaint"
 
 /area/maintenance/fpmaint2
-	name = "Arrivals North Maintenance"
+	name = "Atmospherics Maintenance"
+	icon_state = "fpmaint"
+
+/area/maintenance/fpmaint3
+	name= "Dorms Maintenance"
 	icon_state = "fpmaint"
 
 /area/maintenance/fsmaint
-	name = "Dormitory Maintenance"
+	name = "Engineering Maintenance"
 	icon_state = "fsmaint"
 
 /area/maintenance/fsmaint2
+	name = "Cargo Maintenance"
+	icon_state = "fsmaint"
+
+/area/maintenance/fsmaint3
 	name = "Bar Maintenance"
 	icon_state = "fsmaint"
 
 /area/maintenance/asmaint
-	name = "Medbay Maintenance"
+	name = "EVA Maintenance"
 	icon_state = "asmaint"
 
 /area/maintenance/asmaint2
-	name = "Science Maintenance"
+	name = "Chapel Maintenance"
 	icon_state = "asmaint"
 
 /area/maintenance/apmaint
-	name = "Cargo Maintenance"
+	name = "East Science Maintenance"
 	icon_state = "apmaint"
+
+/area/maintenance/apmaint2
+	name = "West Science Maintenance"
+	icon_state = "apmaint"
+
+/area/maintenance/apmaint3
+	name = "Security Maintenance"
+	icon_state = "apmaint"
+
 
 /area/maintenance/maintcentral
 	name = "Bridge Maintenance"
@@ -743,6 +760,10 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	name = "\improper Fore Primary Hallway"
 	icon_state = "hallF"
 
+/area/hallway/primary/fore/fore_starboard
+	name = "\improper Engineering Primary Hallway"
+	icon_state = "hallF"
+
 /area/hallway/primary/starboard
 	name = "\improper Starboard Primary Hallway"
 	icon_state = "hallS"
@@ -782,6 +803,10 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	name = "\improper Escape Shuttle Hallway"
 	icon_state = "escape"
 
+/area/hallway/secondary/exit/podbay
+	name= "\improper Public Podbay"
+	icon_state = "escape"
+
 /area/hallway/secondary/construction
 	name = "\improper Construction Area"
 	icon_state = "construction"
@@ -817,6 +842,10 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 /area/crew_quarters/captain/bedroom
 	name = "\improper Captain's Bedroom"
 	icon_state = "captain"
+
+/area/crew_quarters/beach
+	name= "\improper Beach"
+	icon_state= "dk_yellow"
 
 /area/crew_quarters/recruit
 	name = "\improper Recruitment Office"
@@ -891,6 +920,14 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 /area/crew_quarters
 	name = "\improper Dormitories"
 	icon_state = "Sleep"
+
+/area/crew_quarters/vacantoffice
+	name = "\improper Vacant Office"
+	icon_state = "bluenew"
+
+/area/crew_quarters/vacantoffice2
+	name = "\improper Vacant Market"
+	icon_state = "bluenew"
 
 /area/crew_quarters/toilet
 	name = "\improper Dormitory Toilets"
@@ -1394,6 +1431,10 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	name = "\improper Security Office"
 	icon_state = "securityoffice"
 
+/area/security/barraks
+	name = "\improper Barracks"
+	icon_state = "securitylobby"
+
 /area/security/lobby
 	name = "\improper Security Lobby"
 	icon_state = "securitylobby"
@@ -1562,14 +1603,6 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 /area/security/checkpoint/science
 	name = "Security Post - Science"
 	icon_state = "checkpoint1"
-
-/area/security/vacantoffice
-	name = "\improper Vacant Office"
-	icon_state = "security"
-
-/area/security/vacantoffice2
-	name = "\improper Vacant Office"
-	icon_state = "security"
 
 /area/quartermaster
 	name = "\improper Quartermasters"
